@@ -1,4 +1,4 @@
-FROM models/codellama-7b-instruct.Q4_K_M.gguf
+FROM https://huggingface.co/TheBloke/CodeLlama-7B-Instruct-GGUF/blob/main/codellama-7b-instruct.Q4_K_M.gguf
 
 TEMPLATE "[INST] <<SYS>> {{ .System }} <</SYS>> {{ .Prompt }} [/INST]"
 PARAMETER rope_frequency_base 1e+06
